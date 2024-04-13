@@ -1,3 +1,11 @@
+/* Librería de variables creadas para todo el sitio Web */
+:root {
+  --primary-color: #dab600;
+  --secondary-color: #511c0a;
+  --titles-font: Arial;
+  --body_font: helvetica;
+}
+
 /* Fuente descargada de internet y añadida en el folder de fonts */
 @font-face {
   font-family: ElegantTypewriterLight;
