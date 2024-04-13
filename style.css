@@ -1,0 +1,13 @@
+/* Fuente descargada de internet y añadida en el folder de fonts */
+@font-face {
+  font-family: ElegantTypewriterLight;
+  src: url("fonts/ELEGANT TYPEWRITER Light.ttf");
+}
+@font-face {
+  font-family: ElegantTypewriterBold;
+  src: url("fonts/ELEGANT TYPEWRITER Bold.ttf");
+}
+@font-face {
+  font-family: ElegantTypewriterRegular;
+  src: url("fonts/ELEGANT TYPEWRITER Regular.ttf");
+}
