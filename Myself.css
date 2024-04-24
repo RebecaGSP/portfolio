@@ -40,6 +40,7 @@
   text-align: center;
   padding-top: 20px;
   float: right;
+  color: white;
 }
 .menuTabs a {
   font-family: ElegantTypewriterRegular;
@@ -56,24 +57,25 @@
 .menuIcon img {
   width: 50px;
 }
-.cover {
-  width: 94.5em;
+.tabSelected {
+  color: var(--secondary-color) !important;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 3px !important;
 }
-.cover img {
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+}
+.gallery img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.cover h1 {
-  position: absolute;
-  top: 400px;
-  left: 70px;
-  font-family: ElegantTypewriterRegular;
-  color: white;
-}
-.cover p {
-  position: absolute;
-  top: 450px;
-  left: 70px;
-  font-family: ElegantTypewriterRegular;
-  color: white;
+.picture1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
