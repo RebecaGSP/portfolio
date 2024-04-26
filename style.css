@@ -29,6 +29,8 @@
 .menu {
   background-color: var(--primary-color);
   height: 60px;
+  position: fixed;
+  width: 100%;
 }
 .menuIcon {
   display: inline-block;
