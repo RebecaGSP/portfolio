@@ -1,0 +1,143 @@
+/* Librería de variables creadas para todo el sitio Web */
+:root {
+  --primary-color: #80d0c5;
+  --secondary-color: #c6e8e1;
+  --tertiary-color: #fcc2c1;
+  --titles-font: Arial;
+  --body_font: helvetica;
+}
+
+/* Fuente descargada de internet y añadida en el folder de fonts */
+@font-face {
+  font-family: ElegantTypewriterLight;
+  src: url("fonts/ELEGANT TYPEWRITER Light.ttf");
+}
+@font-face {
+  font-family: ElegantTypewriterBold;
+  src: url("fonts/ELEGANT TYPEWRITER Bold.ttf");
+}
+@font-face {
+  font-family: ElegantTypewriterRegular;
+  src: url("fonts/ELEGANT TYPEWRITER Regular.ttf");
+}
+
+/* Styling para el resto de los elementos y secciones. magin 0 le quitara el pequeño margen al rededor de todo */
+* {
+  margin: 0;
+}
+
+.menu {
+  background-color: var(--primary-color);
+  height: 60px;
+  position: fixed;
+  width: 100%;
+}
+.menuIcon {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+.menuTabs {
+  text-align: center;
+  padding-top: 20px;
+  float: right;
+  color: white;
+}
+.menuTabs a {
+  font-family: ElegantTypewriterRegular;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: border-bottom 80ms;
+}
+.menuTabs a:hover {
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 3px;
+}
+.menuIcon img {
+  width: 50px;
+}
+.tabSelected {
+  color: var(--secondary-color) !important;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 3px !important;
+}
+
+/* Grid css */
+.gallery {
+  padding: 75px 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 15vw);
+  grid-gap: 15px;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.picture1 {
+  cursor: pointer;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.picture4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.picture5 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+/* Dialog css */
+.photoDialog {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  padding: 0;
+  overflow-x: scroll;
+  width: 800px;
+  height: 500px;
+  border-width: 0;
+}
+::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
+  opacity: 0.75;
+}
+.carrousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 30vw);
+  grid-gap: 15px;
+}
+.carrousel img {
+  height: 500px;
+}
+.close {
+  position: fixed;
+  top: 16%;
+  right: 28%;
+  background-color: unset;
+  border-width: 0;
+  border-color: unset;
+  font-size: x-large;
+  cursor: pointer;
+}
+.close:active {
+  background-color: unset;
+  border-width: 0;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Portfolio</title>
+    <meta name="description" content="UX Designer" />
+    <link rel="stylesheet" href="./MyWork.css" />
+    <link rel="icon" href="./img/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="menuIcon">
+          <a href="./index.html">
+            <img src="./img/favicon.png" />
+          </a>
+        </div>
+        <div class="menuTabs">
+          <a href="./Myself.html">Myself</a>
+          <a class="tabSelected">My Work</a>
+          <a href="./MyClients.html">My Clients</a>
+          <a href="./ContactMe.html">Contact Me</a>
+        </div>
+      </div>
+    </header>
+    <div class="gallery">
+      <div id="openDialog" class="picture1">
+        <img src="./img/picture1.webp" alt="" />
+      </div>
+      <div class="picture2"><img src="./img/picture2.webp" alt="" /></div>
+      <div class="picture3"><img src="./img/picture3.webp" alt="" /></div>
+      <div class="picture4"><img src="./img/picture4.jpeg" alt="" /></div>
+      <div class="picture5"><img src="./img/picture5.jpeg" alt="" /></div>
+      <div class="picture6"><img src="./img/picture6.webp" alt="" /></div>
+      <div class="picture7"><img src="./img/picture7.webp" alt="" /></div>
+    </div>
+    <!-- Simple pop-up dialog box, containing a form -->
+    <dialog id="photoDialog" class="photoDialog">
+      <button id="close" type="reset" class="close">X</button>
+      <div class="carrousel">
+        <div>
+          <img src="./img/picture1.webp" alt="" />
+        </div>
+        <div>
+          <img src="./img/detalleCompu.webp" alt="" />
+        </div>
+        <div>
+          <img src="./img/detalleCompu1.webp" alt="" />
+        </div>
+        <div>
+          <img src="./img/detalleCompu2.webp" alt="" />
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("close");
+        var favDialog = document.getElementById("photoDialog");
+
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
+  </body>
+</html>
