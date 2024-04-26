@@ -25,10 +25,12 @@
 * {
   margin: 0;
 }
-
+/* Menu css*/
 .menu {
   background-color: var(--primary-color);
   height: 60px;
+  position: fixed;
+  width: 100%;
 }
 .menuIcon {
   display: inline-block;
@@ -62,20 +64,34 @@
   border-bottom: 3px solid var(--secondary-color);
   padding-bottom: 3px !important;
 }
-.gallery {
+
+/* Grid css */
+.myselfIntro {
+  padding: 75px 100px;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 15vw);
   grid-gap: 15px;
 }
-.gallery img {
+.myselfIntro img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.picture1 {
+.myselfImage {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
+}
+.myselfText {
+  text-align: center;
+  padding-top: 25%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: ElegantTypewriterRegular;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }

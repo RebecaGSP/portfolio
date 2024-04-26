@@ -18,47 +18,32 @@
         </div>
         <div class="menuTabs">
           <a class="tabSelected">Myself</a>
-          <a>My Work</a>
-          <a>My Clients</a>
-          <a>Contact Me</a>
+          <a href="./MyWork.html">My Work</a>
+          <a href="./MyClients.html">My Clients</a>
+          <a href="./ContactMe.html">Contact Me</a>
         </div>
       </div>
     </header>
-    <div>
-      <div class="gallery">
-        <div id="updateDetails" class="picture1">
-          <img src="./img/picture1.webp" alt="" />
-        </div>
-        <div class="picture2"><img src="./img/picture2.webp" alt="" /></div>
-        <div class="picture3"><img src="./img/picture3.webp" alt="" /></div>
-        <div class="picture4"><img src="./img/picture4.jpeg" alt="" /></div>
-        <div class="picture5"><img src="./img/picture5.jpeg" alt="" /></div>
-        <div class="picture6"><img src="./img/picture6.webp" alt="" /></div>
-        <div class="picture7"><img src="./img/picture7.webp" alt="" /></div>
+    <div class="myselfIntro">
+      <div class="myselfImage">
+        <img src="./img/myself.webp" alt="" />
+      </div>
+      <div class="myselfText">
+        <h1>Hello!</h1>
+        <h3>I´m a mexican UX Designer</h3>
+        <p>Nice to meet you!</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium
+          viverra purus in dignissim. Fusce urna purus, vulputate vitae
+          dignissim id, euismod in metus. Quisque ut urna tempus, dignissim diam
+          sit amet, rutrum diam. In rhoncus leo nec felis luctus porta. Quisque
+          ac purus suscipit, placerat justo a, euismod urna. Curabitur et sem
+          vitae orci vestibulum finibus. Ut cursus laoreet tristique. Curabitur
+          maximus dolor leo, id aliquam nulla molestie ac. Etiam eleifend, odio
+          efficitur rutrum consequat, nulla dui varius magna, ut ornare quam
+          justo nec nisl.
+        </p>
       </div>
     </div>
-    <!-- Simple pop-up dialog box, containing a form -->
-    <dialog id="favDialog">
-      <button id="cancel" type="reset">Cancel</button>
-      <img src="./img/picture1.webp" alt="" />
-    </dialog>
-
-    <script>
-      (function () {
-        var updateButton = document.getElementById("updateDetails");
-        var cancelButton = document.getElementById("cancel");
-        var favDialog = document.getElementById("favDialog");
-
-        // Update button opens a modal dialog
-        updateButton.addEventListener("click", function () {
-          favDialog.showModal();
-        });
-
-        // Form cancel button closes the dialog box
-        cancelButton.addEventListener("click", function () {
-          favDialog.close();
-        });
-      })();
-    </script>
   </body>
 </html>
