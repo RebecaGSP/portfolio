@@ -1,0 +1,81 @@
+/* Librería de variables creadas para todo el sitio Web */
+:root {
+  --primary-color: #80d0c5;
+  --secondary-color: #c6e8e1;
+  --tertiary-color: #fcc2c1;
+  --titles-font: Arial;
+  --body_font: helvetica;
+}
+
+/* Fuente descargada de internet y añadida en el folder de fonts */
+@font-face {
+  font-family: ElegantTypewriterLight;
+  src: url("fonts/ELEGANT TYPEWRITER Light.ttf");
+}
+@font-face {
+  font-family: ElegantTypewriterBold;
+  src: url("fonts/ELEGANT TYPEWRITER Bold.ttf");
+}
+@font-face {
+  font-family: ElegantTypewriterRegular;
+  src: url("fonts/ELEGANT TYPEWRITER Regular.ttf");
+}
+
+/* Styling para el resto de los elementos y secciones. magin 0 le quitara el pequeño margen al rededor de todo */
+* {
+  margin: 0;
+}
+
+/* Menu css*/
+.menu {
+  background-color: var(--primary-color);
+  height: 60px;
+  position: fixed;
+  width: 100%;
+}
+.menuIcon {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+.menuTabs {
+  text-align: center;
+  padding-top: 20px;
+  float: right;
+}
+.menuTabs a {
+  font-family: ElegantTypewriterRegular;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: border-bottom 80ms;
+}
+.menuTabs a:hover {
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 3px;
+}
+.menuIcon img {
+  width: 50px;
+}
+.tabSelected {
+  color: var(--secondary-color) !important;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 3px !important;
+}
+.emailIcon {
+  width: 150px;
+}
+.contactInfo {
+  margin: auto;
+  padding-top: 20%;
+  text-align: center;
+}
+h1 {
+  font-family: ElegantTypewriterLight;
+  color: var(--secondary-color);
+}
+a {
+  text-decoration: unset;
+}
